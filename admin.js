@@ -30,6 +30,22 @@ const publicLink = document.getElementById("publicLink");
 let currentUser = null;
 
 loginBtn.addEventListener("click", async () => {
+  alert("Login button clicked");
+
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
+
+  if (!email || !password) {
+    alert("Enter your email and password.");
+    return;
+  }
+
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+  } catch (error) {
+    alert("Login failed: " + error.message);
+  }
+});
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
 
