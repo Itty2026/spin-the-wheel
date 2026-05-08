@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wheel Admin</title>
+  <link rel="stylesheet" href="./styles.css" /> </head>
+<body>
+  <div class="container">
+    <h1>Wheel Admin</h1>
+
+    <div id="loginSection" class="panel">
+      <h2>Login</h2>
+      <input id="email" type="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
+      <button id="loginBtn" class="blue-btn">Log In</button>
+    </div>
+
+    <div id="adminSection" class="panel" style="display:none;">
+      <h2>Edit Wheel</h2>
+
+      <input id="slugInput" type="text" placeholder="Wheel slug, example: mothers-day" />
+      <input id="titleInput" type="text" placeholder="Wheel title" />
+
+      <textarea id="itemsInput" rows="10" placeholder="Type one prize per line"></textarea>
+
+      <div class="button-row">
+        <button id="loadBtn" class="blue-btn">Load Wheel</button>
+        <button id="saveBtn" class="green-btn">Save Wheel</button>
+        <button id="logoutBtn" class="red-btn">Log Out</button>
+      </div>
+
+      <p><strong>Public Link:</strong></p>
+      <p id="publicLink"></p>
+    </div>
+  </div>
+
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>
