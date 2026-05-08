@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spin the Wheel</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="wheelTitle">Spin the Wheel</h1>
+
+    <div class="panel">
+      <canvas id="wheelCanvas" width="500" height="500"></canvas>
+    </div>
+
+    <button id="spinBtn" class="green-btn">Spin the Wheel</button>
+
+    <div id="winnerText" class="winner-box"></div>
+  </div>
+
+  <script type="module" src="./wheel.js"></script>
+</body>
+</html>
